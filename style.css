@@ -7,6 +7,7 @@ body{
     background-image: url('bg.webp');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 .navbar{
     display: flex;
@@ -105,6 +106,7 @@ body{
 .features-page-wrapper {
   background: #f4f1e4;
   padding: 24px 20px;
+  margin-top: 40px;
 }
 
 .features-nav {
@@ -114,7 +116,7 @@ body{
   flex-wrap: wrap;
   gap: 10px;
   max-width: 900px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .features-nav .nav-item {
@@ -145,12 +147,7 @@ body{
 .features-nav .divider {
   display: none; /* pill style replaces need for | separators */
 }
-.feature-image{
-  display: block;
-  margin: 10px auto;
-  max-width: 100%;
-  height: 600px;
-}
+
 @media (max-width: 640px) {
   .features-nav {
     gap: 8px;
@@ -159,4 +156,37 @@ body{
     font-size: 13px;
     padding: 6px 14px;
   }
+}
+.overview-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* was flex-start */
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto; /* centers the block itself on the page */
+}
+
+.overview-image {
+    flex: 0 0 auto; /* don't let it grow/shrink oddly */
+    max-width: 450px;
+}
+
+.overview-image img {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.overview-text {
+    flex: 1;
+    min-width: 300px;
+}
+.overview-points {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.overview-points li {
+    margin-bottom: 8px;
 }
