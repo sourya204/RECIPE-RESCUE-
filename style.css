@@ -33,7 +33,6 @@ body{
 }
 .cta-button{
     background-color:  #5f6b38;
-;
     color: #fff;
     border:none;
     padding: 10px 20px;
@@ -43,6 +42,15 @@ body{
 .cta-button:hover{
     background-color: #222922;
     color: #fff;
+}
+.cta-button-large{
+    background-color:  #5f6b38;
+    color: #fff;
+    border:none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 20px;
 }
 .logo img{
     height: 66px;
@@ -80,6 +88,19 @@ body{
 }
 .store-btn img:hover {
     transform: scale(1.04);
+}
+.hero-image {
+    flex: 1;
+    min-width: 100px;
+    display: flex;
+    justify-content: center;
+    margin-left: 600px;
+    margin-top: -300px;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: 500px;
 }
 .features-page-wrapper {
   background: #f4f1e4;
@@ -124,7 +145,12 @@ body{
 .features-nav .divider {
   display: none; /* pill style replaces need for | separators */
 }
-
+.feature-image{
+  display: block;
+  margin: 10px auto;
+  max-width: 100%;
+  height: 600px;
+}
 @media (max-width: 640px) {
   .features-nav {
     gap: 8px;
