@@ -13,21 +13,17 @@
             <li><a href="#features">Features</a></li>
             <li><a href="#how-it-works">How It Works</a></li>
             <li><a href="#reviews">Reviews</a></li>
-            <li><a href="#download">Download</a></li>
+            <li><a href="#try-it">Try It</a></li>
             <li><a href="#about">About</a></li>
         </ul>
-        <button class="cta-button">Get The App</button>
+        <button class="cta-button" onclick="document.getElementById('try-it').scrollIntoView({behavior:'smooth'})">Try It Free</button>
     </nav>
     <section class="hero">
         <h1>Transform Ingredients.<br>Rescue Your Meals<br>with AI.</h1>
         <p>Recipe Rescue finds delicious solutions for your leftover<br>ingredients and dietary needs. Personalized recipes, instantly generated.</p>
-        <div class="download-buttons">
-            <a href="#" class="store-btn">
-                <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;format=svg" alt="Download on the App Store">
-            </a>
-            <a href="#" class="store-btn">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
-            </a>
+        <button class="cta-button-large" onclick="document.getElementById('try-it').scrollIntoView({behavior:'smooth'})">Get Started — It's Free</button>
+        <div class="hero-image">
+            <img src="front pg.png" alt="Recipe Rescue app identifying ingredients">
         </div>
     </section>
     <div class="features-page-wrapper">
@@ -47,6 +43,31 @@
     
                 <button class="nav-item" onclick="switchTab('coach')">Step-by-Step AI Coach</button>
             </nav>
+            <img src="features.png" alt="Feature Image" class="feature-image">
+            <div id="overview" class="tab-content active">
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🧠</div>
+                        <h3>Smart Engine</h3>
+                        <p>Type in what you have, and AI instantly suggests recipes that make the most of it.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📷</div>
+                        <h3>Visual Scanner</h3>
+                        <p>Point your camera at ingredients or barcodes to add them automatically.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎛️</div>
+                        <h3>Advanced Filters</h3>
+                        <p>Filter by diet, allergies, cuisine, or cook time to get recipes that actually fit your life.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">👨‍🍳</div>
+                        <h3>Step-by-Step AI Coach</h3>
+                        <p>Get guided, one-step-at-a-time cooking instructions with AI answering your questions live.</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
 </body>
