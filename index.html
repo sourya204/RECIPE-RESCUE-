@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RECIPE RESCUE🍲</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
@@ -29,37 +30,100 @@
     <div class="features-page-wrapper">
         <section id="features" class="features">
             <nav class="features-nav">
-                <button class="nav-item active" onclick="switchTab('overview')">Feature Overview</button>
-                <span class="divider">|</span>
-    
-                <button class="nav-item" onclick="switchTab('smart-engine')">Smart Engine</button>
-                <span class="divider">|</span>
-    
-                <button class="nav-item" onclick="switchTab('visual-scanner')">Visual Scanner</button>
-                <span class="divider">|</span>
-    
-                <button class="nav-item" onclick="switchTab('advanced-filters')">Advanced Filters</button>
-                <span class="divider">|</span>
-    
-                <button class="nav-item" onclick="switchTab('coach')">Step-by-Step AI Coach</button>
+                <button class="nav-item active" onclick="scrollToTab(0)">Feature Overview</button>
+                <button class="nav-item" onclick="scrollToTab(1)">Smart Engine</button>
+                <button class="nav-item" onclick="scrollToTab(2)">Visual Scanner</button>
+                <button class="nav-item" onclick="scrollToTab(3)">Advanced Filters</button>
+                <button class="nav-item" onclick="scrollToTab(4)">Step-by-Step AI Coach</button>
             </nav>
-            <div id="overview" class="tab-content active">
-                <div class="overview-layout">
-                    <div class="overview-image">
-                        <img src="features.png" alt="Feature Image" class="feature-image">
+            <div class="swipe-container" id="swipe-container">
+                <div class="swipe-panel" id="overview">
+                    <div class="overview-layout">
+                        <div class="overview-image">
+                            <img src="features.png" alt="Feature Image" class="feature-image">
+                        </div>
+                        <div class="overview-text">
+                            <h2>One app. Every ingredient. Endless meals.</h2>
+                            <p>Recipe Rescue turns what's already in your kitchen into your next favorite <br>meal — no more staring at random leftovers wondering what to make.</p>
+                            <ul class="overview-points">
+                                <li>✅ Type or scan your ingredients</li>
+                                <li>✅ Get instant, personalized recipes</li>
+                                <li>✅ Cook smarter, waste less</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="overview-text">
-                        <h2>One app. Every ingredient. Endless meals.</h2>
-                        <p>Recipe Rescue turns what's already in your kitchen into your next favorite <br>meal — no more staring at random leftovers wondering what to make.</p>
-                        <ul class="overview-points">
-                            <li>✅ Type or scan your ingredients</li>
-                            <li>✅ Get instant, personalized recipes</li>
-                            <li>✅ Cook smarter, waste less</li>
-                        </ul>
+                </div>
+                <div class="swipe-panel" id="smart-engine">
+                    <div class="smart-engine-layout">
+                        <div class="smart-engine-image">
+
+                        </div>
+                        <div class="smart-engine-text">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="swipe-panel" id="visual-scanner">
+                    <div class="visual-scanner-layout">
+                        <div class="visual-scanner-image">
+
+                        </div>
+                        <div class="visual-scanner-text">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="swipe-panel" id="advanced-filters">
+                    <div class="advanced-filters-layout">
+                        <div class="advanced-filters-image">
+
+                        </div>
+                        <div class="advanced-filters-text">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swipe-panel" id="step-by-step-ai-coach">
+                    <div class="step-by-step-ai-coach-layout">
+                        <div class="step-by-step-ai-coach-image">
+                            
+                        </div>
+                        <div class="step-by-step-ai-coach-text">
+
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </div>
+    <section id="how-it-works" class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="how-it-works-steps">
+            <div class="step">
+                <div class="step-img-wrapper">
+                    <img src="Type your ingredients.png" alt="Scan Ingredients">
+                </div>
+                <div class="step-line"></div>
+                <h3>Scan Ingredients</h3>
+                <p>Use your camera to scan your ingredients or type them in manually.</p>
+            </div>
+            <div class="step">
+                <div class="step-img-wrapper">
+                    <img src="dietaryprefs.png" alt="Generate Recipes">
+                </div>
+                <div class="step-line"></div>
+                <h3>Generate Recipes</h3>
+                <p>Our AI engine instantly generates personalized recipes based on your ingredients and dietary preferences.</p>
+            </div>
+            <div class="step">
+                <div class="step-img-wrapper">
+                    <img src="idea.png" alt="Cook Your Meal">
+                </div>
+                <div class="step-line"></div>
+                <h3>Cook Your Meal</h3>
+                <p>Follow the step-by-step instructions and enjoy a delicious meal made from your leftovers!</p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
