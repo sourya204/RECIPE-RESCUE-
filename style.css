@@ -292,4 +292,338 @@ body{
     margin: 20px auto 20px auto;
     border-radius: 2px;
 }
+.try-it-tool {
+    padding: 80px 20px; /* more breathing room top/bottom */
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.try-it-box {
+    background: transparent; /* or your solid color if you added the box wrapper */
+    border-radius: 24px;
+    padding: 50px 40px;
+    text-align: center;
+}
+
+.try-it-box h2 {
+    font-size: 2.2rem;
+    margin-bottom: 16px; /* space between heading and subtext */
+    color: #2d3b23;
+    font-family: 'Fraunces', serif;
+}
+
+.try-it-box > p {
+    color: #555;
+    margin-bottom: 32px; /* space between subtext and input row */
+    font-size: 1rem;
+}
+
+.try-it-input-row {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+#ingredient-input {
+    padding: 14px 20px; /* taller input, more comfortable to click/type */
+    width: 340px;
+    max-width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.try-it-input-row button {
+    padding: 14px 28px; /* match input height */
+    background: #5c6b3a;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.try-it-input-row button:hover {
+    background: #4a5730;
+}
+
+.results-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.recipe-card {
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    max-width: 260px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.recipe-card h3 {
+    margin-bottom: 8px;
+    color: #2d3b23;
+}
+
+.recipe-card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.no-results {
+    color: #777;
+    font-style: italic;
+}
+.results-box {
+    background: #ffffff; /* fully opaque, not translucent */
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 800px;
+    margin: 30px auto 0 auto;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+
+    /* entrance animation */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.4s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.results-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.reviews h2{
+    font-family: 'Fraunces', serif;
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #2d3b23;
+    letter-spacing: -0.5px;
+    text-align: center;
+}
+.reviews-empty-state{
+    max-width: 500px;
+    margin: 0 auto 50px auto;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px dashed rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    padding: 50px 30px;
+}
+.empty-icon {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+}
+
+.reviews-empty-state h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+
+.reviews-empty-state p {
+    color: #666;
+    font-size: 0.95rem;
+}
+.reviews-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    margin: 40px auto;
+    max-width: 1000px;
+}
+.leave-review-box {
+    display: flex;
+    align-items: flex-end;
+    gap: 40px;
+    background: #5c6b3a;
+    border-radius: 24px;
+    padding: 40px 50px 0 50px; /* bottom padding set to 0 */
+    max-width: 900px;
+    margin: 40px auto;
+    overflow: hidden; /* clips image edges to the box's rounded corners */
+    position: relative;
+}
+
+.review-phone-mockup {
+    flex: 0 0 auto;
+    max-width: 380px; /* bigger, as requested */
+    align-self: flex-end;
+    margin-bottom: -1px; /* nudges it flush against the very bottom edge */
+}
+
+.review-phone-mockup img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.leave-review-text {
+    flex: 1;
+    color: white;
+    text-align: left;
+    padding-bottom: 40px; /* keeps text content from also touching the bottom */
+}
+
+.leave-review-text h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: black;
+    font-family: 'Fraunces', serif;
+}
+
+.leave-review-text p {
+    margin-bottom: 20px;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.6;
+}
+
+.leave-review-text form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 400px;
+}
+
+.leave-review-text input,
+.leave-review-text textarea {
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: none;
+    font-size: 0.95rem;
+}
+
+.leave-review-text textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.leave-review-text button {
+    align-self: flex-start;
+    background: white;
+    color: #5c6b3a;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.star-input {
+    font-size: 1.6rem;
+    color: rgba(255,255,255,0.4);
+    cursor: pointer;
+}
+.about {
+    padding: 80px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    background: #f0ead6;
+    border-radius: 24px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.about h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    color: #2d3b23;
+    font-family: 'Fraunces', serif;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.about-text {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.about-text p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 16px;
+    font-size: 1.05rem;
+}
+
+.about-values {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.value-card {
+    background: #5c6b3a;
+    color: white;
+    border-radius: 16px;
+    padding: 30px 24px;
+    max-width: 220px;
+    flex: 1;
+    min-width: 180px;
+}
+
+.value-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.value-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.value-card p {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.85);
+}
+.site-footer {
+    background: #2d3b23;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 16px;
+}
+
+.footer-social a {
+    color: white;
+    font-size: 1.4rem;
+    opacity: 0.85;
+    transition: opacity 0.2s, transform 0.2s;
+}
+
+.footer-social a:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+.footer-copyright {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+}
+
 
