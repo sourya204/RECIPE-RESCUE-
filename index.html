@@ -13,8 +13,8 @@
         <ul class="nav-links">
             <li><a href="#features">Features</a></li>
             <li><a href="#how-it-works">How It Works</a></li>
-            <li><a href="#reviews">Reviews</a></li>
             <li><a href="#try-it">Try It</a></li>
+            <li><a href="#reviews">Reviews</a></li>
             <li><a href="#about">About</a></li>
         </ul>
         <button class="cta-button" onclick="document.getElementById('try-it').scrollIntoView({behavior:'smooth'})">Try It Free</button>
@@ -125,5 +125,98 @@
             </div>
         </div>
     </section>
+    <section id="try-it" class="try-it-tool">
+        <div class="try-it-box">
+            <h2>Try Recipe Rescue</h2>
+            <p>Type in what you've got in your fridge, separated by commas:</p>
+            <div class="try-it-input-row">
+                <input type="text" id="ingredient-input" placeholder="e.g. chicken, onion, rice">
+                <button onclick="findRecipes()">Find Recipes</button>
+            </div>
+            <div id="results-box" class="results-box" style="display:none;">
+                <div id="results" class="results-grid"></div>
+                <button id="load-more-btn" class="load-more-btn" onclick="loadMore()" style="display:none;">Load More</button>
+            </div>
+        </div>
+    </section>
+    <section id="reviews" class="reviews">
+        <h2>What Our Community Is Saying</h2>
+    
+        <div class="reviews-empty-state" id="empty-state">
+            <div class="empty-icon">💬</div>
+            <h3>Be the first to share your experience</h3>
+            <p>We're just getting started — your review could be the first one here!</p>
+        </div>
+    
+        <div class="reviews-list" id="reviews-list">
+            <!-- real review cards will get added here dynamically once people submit -->
+        </div>
+    
+        <div class="leave-review-box">
+            <div class="review-phone-mockup">
+                <img src="Leave A Review.png" alt="Leave a review on your phone">
+            </div>
+            <div class="leave-review-text">
+                <h3>Leave A Review</h3>
+                <p>Loved a recipe or found a bug? Tell us about your experience — it helps other home cooks and helps us make Recipe Rescue better.</p>
+                <form id="review-form">
+                    <input type="text" id="review-name" placeholder="Your name" required>
+                    <input type="email" id="review-email" placeholder="Your email" required>
+                    <div class="star-input" id="star-input">
+                        <span data-value="1">★</span>
+                        <span data-value="2">★</span>
+                        <span data-value="3">★</span>
+                        <span data-value="4">★</span>
+                        <span data-value="5">★</span>
+                    </div>
+                    <textarea id="review-message" placeholder="Your review..." required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <h2>About Recipe Rescue</h2>
+        
+        <div class="about-content">
+            <div class="about-text">
+                <p>Recipe Rescue started with a simple frustration: staring into the fridge, seeing a random mix of leftovers, and having no idea what to cook.</p>
+                <p>We built this tool to solve that exact problem — turning whatever you already have into a real, doable meal, instantly. No more wasted groceries, no more "what should I make" scrolling for 20 minutes.</p>
+                <p>Whether you're a beginner cook or just trying to use up what's in your fridge before it goes bad, Recipe Rescue is built to make that decision easy.</p>
+            </div>
+    
+            <div class="about-values">
+                <div class="value-card">
+                    <div class="value-icon">🌱</div>
+                    <h3>Less Waste</h3>
+                    <p>Use what you have before it goes to waste.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">⚡</div>
+                    <h3>Instant Answers</h3>
+                    <p>No endless scrolling — get recipes in seconds.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🍽️</div>
+                    <h3>Made for Everyone</h3>
+                    <p>Whether you're a beginner or a home chef.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div class="footer-social">
+            <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="mailto:youremail@example.com" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </div>
+        <p class="footer-copyright">© 2026 Recipe Rescue — Built by Sourya Roy</p>
+    </footer>
 </body>
 </html>
