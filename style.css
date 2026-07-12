@@ -9,6 +9,10 @@ body{
     background-position: center;
     background-attachment: fixed;
 }
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -143,7 +147,14 @@ body{
   border-color: #5f6b38;
   color: #f4f1e4;
 }
+.swipe-container {
+    max-height: 480px; /* shortens the overall panel height */
+    overflow: hidden;
+}
 
+.swipe-panel {
+    padding: 20px 0; /* reduced from whatever larger padding it had */
+}
 .features-nav .divider {
   display: none; /* pill style replaces need for | separators */
 }
@@ -159,28 +170,47 @@ body{
 }
 .overview-layout {
     display: flex;
-    align-items: center;
-    justify-content: center; /* was flex-start */
+    align-items: flex-end; /* image touches bottom of the row */
+    justify-content: center;
     gap: 40px;
     max-width: 1100px;
-    margin: 0 auto; /* centers the block itself on the page */
+    margin: 0 auto;
 }
 
 .overview-image {
-    flex: 0 0 auto; /* don't let it grow/shrink oddly */
-    max-width: 450px;
+    flex: 0 0 auto;
+    max-width: 380px; /* bigger than before */
+    align-self: flex-end;
 }
 
 .overview-image img {
     max-width: 100%;
     height: auto;
-    display: flex;
+    display: block;
 }
 
 .overview-text {
     flex: 1;
     min-width: 300px;
+    padding-bottom: 20px; /* keeps text from also hugging the very bottom */
 }
+
+.overview-text h2 {
+    font-family: 'Georgia', serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #2d3b23;
+    margin-bottom: 14px;
+    letter-spacing: -0.3px;
+}
+
+.overview-text p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+}
+
 .overview-points {
     list-style: none;
     padding-left: 0;
@@ -188,9 +218,13 @@ body{
 }
 
 .overview-points li {
-    margin-bottom: 8px;
+    font-size: 1.05rem;
+    color: #333;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
-
 
 
 
@@ -620,6 +654,12 @@ body{
     opacity: 1;
     transform: translateY(-2px);
 }
+
+.footer-copyright {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+}
+
 
 .footer-copyright {
     color: rgba(255, 255, 255, 0.7);
