@@ -6,6 +6,7 @@
     <title>RECIPE RESCUE🍲</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <nav class="navbar">
@@ -38,58 +39,83 @@
             </nav>
             <div class="swipe-container" id="swipe-container">
                 <div class="swipe-panel" id="overview">
-                    <div class="overview-layout">
-                        <div class="overview-image">
-                            <img src="features.png" alt="Feature Image" class="feature-image">
+                    <div class="feature-layout">
+                        <div class="feature-image">
+                            <img src="features.png" alt="Feature Image">
                         </div>
-                        <div class="overview-text">
+                        <div class="feature-text">
                             <h2>One app. Every ingredient. Endless meals.</h2>
-                            <p>Recipe Rescue turns what's already in your kitchen into your next favorite <br>meal — no more staring at random leftovers wondering what to make.</p>
-                            <ul class="overview-points">
-                                <li>✅ Type or scan your ingredients</li>
-                                <li>✅ Get instant, personalized recipes</li>
-                                <li>✅ Cook smarter, waste less</li>
+                            <p>Recipe Rescue turns what's already in your kitchen into your next favorite meal — no more staring at random leftovers wondering what to make.</p>
+                            <ul class="feature-points">
+                                <li><i class="fa-solid fa-circle-check"></i> Type or scan your ingredients</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Get instant, personalized recipes</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Cook smarter, waste less</li>
                             </ul>
                         </div>
                     </div>
                 </div>
+                
                 <div class="swipe-panel" id="smart-engine">
-                    <div class="smart-engine-layout">
-                        <div class="smart-engine-image">
-
+                    <div class="feature-layout">
+                        <div class="feature-text">
+                            <h2>Your ingredients,<br> decoded instantly.</h2>
+                            <p>Type what's in your kitchen and our engine instantly matches it against thousands of recipes — ranked by how well they fit what you actually have.</p>
+                            <ul class="feature-points">
+                                <li><i class="fa-solid fa-circle-check"></i> Matches recipes to your exact ingredients</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Ranks results by best fit first</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Works even with partial or leftover ingredients</li>
+                            </ul>
                         </div>
-                        <div class="smart-engine-text">
-                            
+                        <div class="feature-image">
+                            <img src="smart-engine.png" alt="Smart Engine matching ingredients to recipes">
                         </div>
                     </div>
                 </div>
                 <div class="swipe-panel" id="visual-scanner">
-                    <div class="visual-scanner-layout">
-                        <div class="visual-scanner-image">
-
+                    <div class="feature-layout">
+                        <div class="feature-image">
+                            <img src="visual-scanner.png" alt="Visual Scanner identifying ingredients through camera">
                         </div>
-                        <div class="visual-scanner-text">
-                            
+                        <div class="feature-text">
+                            <h2>Point, scan, cook.</h2>
+                            <p>No typing needed — just point your camera at your ingredients<br> and let the scanner identify everything on your counter in seconds.</p>
+                            <ul class="feature-points">
+                                <li><i class="fa-solid fa-circle-check"></i> Instantly recognizes raw ingredients</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Works with your phone's built-in camera</li>
+                                <li><i class="fa-solid fa-circle-check"></i> No manual entry required</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
                 <div class="swipe-panel" id="advanced-filters">
-                    <div class="advanced-filters-layout">
-                        <div class="advanced-filters-image">
-
+                    <div class="feature-layout">
+                        <div class="feature-text">
+                            <h2>Recipes that fit your life.</h2>
+                            <p>Filter results by diet, allergies, cuisine, or cook time<br> — so every recipe you see actually works for how you eat.</p>
+                            <ul class="feature-points">
+                                <li><i class="fa-solid fa-circle-check"></i> Vegan, keto, gluten-free, and more</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Filter out allergens automatically</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Sort by cook time or cuisine type</li>
+                            </ul>
                         </div>
-                        <div class="advanced-filters-text">
-
+                        <div class="feature-image">
+                            <img src="advanced-filters.png" alt="Advanced dietary and preference filters">
                         </div>
                     </div>
                 </div>
                 <div class="swipe-panel" id="step-by-step-ai-coach">
-                    <div class="step-by-step-ai-coach-layout">
-                        <div class="step-by-step-ai-coach-image">
-                            
+                    <div class="feature-layout">
+                        <div class="feature-image">
+                            <img src="ai-coach.png" alt="AI Coach guiding through cooking steps">
                         </div>
-                        <div class="step-by-step-ai-coach-text">
-
+                        <div class="feature-text">
+                            <h2>AI in your kitchen, one step at a time.</h2>
+                            <p>Get guided, step-by-step cooking instructions with an AI that answers your questions live — no more guessing what "fold gently" means.</p>
+                            <ul class="feature-points">
+                                <li><i class="fa-solid fa-circle-check"></i> Step-by-step guided cooking</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Ask questions mid-recipe, get instant answers</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Never lose your place in a recipe again</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -142,36 +168,43 @@
     <section id="reviews" class="reviews">
         <h2>What Our Community Is Saying</h2>
     
-        <div class="reviews-empty-state" id="empty-state">
-            <div class="empty-icon">💬</div>
-            <h3>Be the first to share your experience</h3>
-            <p>We're just getting started — your review could be the first one here!</p>
-        </div>
-    
-        <div class="reviews-list" id="reviews-list">
-            <!-- real review cards will get added here dynamically once people submit -->
-        </div>
-    
-        <div class="leave-review-box">
-            <div class="review-phone-mockup">
-                <img src="Leave A Review.png" alt="Leave a review on your phone">
-            </div>
-            <div class="leave-review-text">
-                <h3>Leave A Review</h3>
-                <p>Loved a recipe or found a bug? Tell us about your experience — it helps other home cooks and helps us make Recipe Rescue better.</p>
-                <form id="review-form">
-                    <input type="text" id="review-name" placeholder="Your name" required>
-                    <input type="email" id="review-email" placeholder="Your email" required>
-                    <div class="star-input" id="star-input">
-                        <span data-value="1">★</span>
-                        <span data-value="2">★</span>
-                        <span data-value="3">★</span>
-                        <span data-value="4">★</span>
-                        <span data-value="5">★</span>
+        <div class="reviews-layout">
+            <!-- LEFT: Swipeable reviews carousel -->
+            <div class="reviews-swipe-wrapper">
+                <div class="reviews-swipe-container" id="reviews-swipe-container">
+                    <div class="review-slide" id="empty-state">
+                        <div class="empty-icon">💬</div>
+                        <h3>Be the first to share your experience</h3>
+                        <p>We're just getting started — your review could be the first one here!</p>
                     </div>
-                    <textarea id="review-message" placeholder="Your review..." required></textarea>
-                    <button type="submit">Send</button>
-                </form>
+                </div>
+                <div class="review-dots" id="review-dots">
+                    <span class="dot active"></span>
+                </div>
+            </div>
+        
+            <!-- RIGHT: Leave A Review box -->
+            <div class="leave-review-box">
+                <div class="review-phone-mockup">
+                    <img src="Leave A Review.png" alt="Leave a review on your phone">
+                </div>
+                <div class="leave-review-text">
+                    <h3>Leave A Review</h3>
+                    <p>Loved a recipe or found a bug? Tell us about your experience — it helps other home cooks and helps us make Recipe Rescue better.</p>
+                    <form id="review-form">
+                        <input type="text" id="review-name" placeholder="Your name" required>
+                        <input type="email" id="review-email" placeholder="Your email" required>
+                        <div class="star-input" id="star-input">
+                            <span data-value="1">★</span>
+                            <span data-value="2">★</span>
+                            <span data-value="3">★</span>
+                            <span data-value="4">★</span>
+                            <span data-value="5">★</span>
+                        </div>
+                        <textarea id="review-message" placeholder="Your review..." required></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -187,17 +220,17 @@
     
             <div class="about-values">
                 <div class="value-card">
-                    <div class="value-icon">🌱</div>
+                    <div class="value-icon"><i class="fa-solid fa-seedling"></i></div>
                     <h3>Less Waste</h3>
                     <p>Use what you have before it goes to waste.</p>
                 </div>
                 <div class="value-card">
-                    <div class="value-icon">⚡</div>
+                    <div class="value-icon"><i class="fa-solid fa-bolt"></i></div>
                     <h3>Instant Answers</h3>
                     <p>No endless scrolling — get recipes in seconds.</p>
                 </div>
                 <div class="value-card">
-                    <div class="value-icon">🍽️</div>
+                    <div class="value-icon"><i class="fa-solid fa-utensils"></i></div>
                     <h3>Made for Everyone</h3>
                     <p>Whether you're a beginner or a home chef.</p>
                 </div>
@@ -206,17 +239,18 @@
     </section>
     <footer class="site-footer">
         <div class="footer-social">
-            <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+            <a href="https://github.com/sourya204" target="_blank" aria-label="GitHub">
                 <i class="fa-brands fa-github"></i>
             </a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/sourya-roy-9946ab369/" target="_blank" aria-label="LinkedIn">
                 <i class="fa-brands fa-linkedin"></i>
             </a>
-            <a href="mailto:youremail@example.com" aria-label="Email">
+            <a href="mailto:sourya.roy204@gmail.com" aria-label="Email">
                 <i class="fa-solid fa-envelope"></i>
             </a>
         </div>
         <p class="footer-copyright">© 2026 Recipe Rescue — Built by Sourya Roy</p>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
