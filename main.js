@@ -11,20 +11,14 @@ const recipes = [
     { name: "Garlic Bread", ingredients: ["bread", "garlic", "butter"] },
     { name: "Simple Salad", ingredients: ["tomato", "cucumber", "onion", "lemon"] }
 ];
-
-let currentMatches = [];
-let itemsShown = 0;
-const BATCH_SIZE = 3;
-
 // ============================================
 // 2. FEATURES TAB — swipe/glide navigation
 // ============================================
-
-function scrollToTab(tabIndex) {
-    const featuresContainer = document.querySelector('.features');
-    const tabWidth = featuresContainer.clientWidth;
-    featuresContainer.scrollTo({
-        left: tabIndex * tabWidth,
+function scrollToTab(index) {
+    const container = document.getElementById('swipe-container');
+    const panelWidth = container.clientWidth;
+    container.scrollTo({
+        left: panelWidth * index,
         behavior: 'smooth'
     });
 }
